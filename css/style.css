@@ -1,0 +1,149 @@
+@charset "UTF-8";
+/*
+btn_talk.png
+사이즈 80*90
+무료채팅{background-position:0 0;}
+보이스톡{background-position:-80px 0;}
+샵검색{background-position:-160px 0;}
+톡게시판{background-position:-240px 0;}
+오픈채팅{background-position:-320px 0;}
+채널탭{background-position:-400px 0;}
+
+무료채팅:hover{background-position:0 -90px;}
+보이스톡:hover{background-position:-80px -90px;}
+샵검색:hover{background-position:-160px -90px;}
+톡게시판:hover{background-position:-240px -90px;}
+오픈채팅:hover{background-position:-320px -90px;}
+채널탭:hover{background-position:-400px -90px;}
+
+
+이전,다음
+사이즈 44*44
+img_talk_button.png
+
+
+
+이전{left:0;background-position:0 0;}
+이전:hover{background-position:-70px 0;}
+
+다음{right:0;background-position:0 -70px;}
+다음:hover{background-position:-70px -70px;}
+*/
+#wrap {
+  width: 700px;
+  margin: 0 auto;
+}
+#wrap > header > h1 {
+  color: #666;
+}
+#wrap > section > .navigation > ul {
+  display: flex;
+  justify-content: center;
+}
+#wrap > section > .navigation > ul > li {
+  width: 80px;
+  background-image: url(../images/btn_talk.png);
+}
+#wrap > section > .navigation > ul > li:nth-child(1):hover, #wrap > section > .navigation > ul > li:nth-child(1).on {
+  background-position: 0 -90px;
+}
+#wrap > section > .navigation > ul > li:nth-child(2) {
+  background-position: -80px 0;
+}
+#wrap > section > .navigation > ul > li:nth-child(2):hover, #wrap > section > .navigation > ul > li:nth-child(2).on {
+  background-position: -80px -90px;
+}
+#wrap > section > .navigation > ul > li:nth-child(3) {
+  background-position: -160px 0;
+}
+#wrap > section > .navigation > ul > li:nth-child(3):hover, #wrap > section > .navigation > ul > li:nth-child(3).on {
+  background-position: -160px -90px;
+}
+#wrap > section > .navigation > ul > li:nth-child(4) {
+  background-position: -240px 0;
+}
+#wrap > section > .navigation > ul > li:nth-child(4):hover, #wrap > section > .navigation > ul > li:nth-child(4).on {
+  background-position: -240px -90px;
+}
+#wrap > section > .navigation > ul > li:nth-child(5) {
+  background-position: -320px 0;
+}
+#wrap > section > .navigation > ul > li:nth-child(5):hover, #wrap > section > .navigation > ul > li:nth-child(5).on {
+  background-position: -320px -90px;
+}
+#wrap > section > .navigation > ul > li:nth-child(6) {
+  background-position: -400px 0;
+}
+#wrap > section > .navigation > ul > li:nth-child(6):hover, #wrap > section > .navigation > ul > li:nth-child(6).on {
+  background-position: -400px -90px;
+}
+#wrap > section > .navigation > ul > li > a {
+  display: block;
+  height: 90px;
+  text-indent: -9999px;
+}
+#wrap > section > .slides {
+  overflow: hidden;
+  position: relative;
+  height: 438px;
+  margin-top: 20px;
+}
+#wrap > section > .slides > ul.slides-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-flow: row nowrap;
+  width: 600%;
+}
+#wrap > section > .slides > ul.slides-container > li {
+  width: 16.66666%;
+  height: 438px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+#wrap > section > .slides > ul.slides-container > li:nth-child(1) {
+  background-image: url(../images/img_talk_cont1.png);
+}
+#wrap > section > .slides > ul.slides-container > li:nth-child(2) {
+  background-image: url(../images/img_talk_cont2.png);
+}
+#wrap > section > .slides > ul.slides-container > li:nth-child(3) {
+  background-image: url(../images/img_talk_cont3.png);
+}
+#wrap > section > .slides > ul.slides-container > li:nth-child(4) {
+  background-image: url(../images/img_talk_cont4.png);
+}
+#wrap > section > .slides > ul.slides-container > li:nth-child(5) {
+  background-image: url(../images/img_talk_cont5.png);
+}
+#wrap > section > .slides > ul.slides-container > li:nth-child(6) {
+  background-image: url(../images/img_talk_cont6.png);
+}
+#wrap > section > .slides > a {
+  display: block;
+  width: 44px;
+  height: 44px;
+  text-indent: -9999px;
+  background-image: url(../images/img_talk_button.png);
+}
+#wrap > section > .slides > a.slide-prev {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-position: 0 0;
+}
+#wrap > section > .slides > a.slide-prev:hover {
+  background-position: -70px 0;
+}
+#wrap > section > .slides > a.slide-next {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  background-position: 0 -70px;
+}
+#wrap > section > .slides > a.slide-next:hover {
+  background-position: -70px -70px;
+}/*# sourceMappingURL=style.css.map */

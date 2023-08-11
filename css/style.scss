@@ -1,0 +1,164 @@
+/*
+btn_talk.png
+사이즈 80*90
+무료채팅{background-position:0 0;}
+보이스톡{background-position:-80px 0;}
+샵검색{background-position:-160px 0;}
+톡게시판{background-position:-240px 0;}
+오픈채팅{background-position:-320px 0;}
+채널탭{background-position:-400px 0;}
+
+무료채팅:hover{background-position:0 -90px;}
+보이스톡:hover{background-position:-80px -90px;}
+샵검색:hover{background-position:-160px -90px;}
+톡게시판:hover{background-position:-240px -90px;}
+오픈채팅:hover{background-position:-320px -90px;}
+채널탭:hover{background-position:-400px -90px;}
+
+
+이전,다음
+사이즈 44*44
+img_talk_button.png
+
+
+
+이전{left:0;background-position:0 0;}
+이전:hover{background-position:-70px 0;}
+
+다음{right:0;background-position:0 -70px;}
+다음:hover{background-position:-70px -70px;}
+*/
+#wrap {
+	width: 700px;
+	margin: 0 auto;
+	> header {
+		> h1 {
+			color: #666;
+		}
+	}
+	> section {
+		> .navigation {
+			> ul {
+				display: flex;
+				justify-content: center;
+				> li {
+					width: 80px;
+					background-image: url(../images/btn_talk.png);
+					&:nth-child(1) {
+						&:hover,
+						&.on {
+							background-position: 0 -90px;
+						}
+					}
+					&:nth-child(2) {
+						background-position: -80px 0;
+						&:hover,
+						&.on {
+							background-position: -80px -90px;
+						}
+					}
+					&:nth-child(3) {
+						background-position: -160px 0;
+						&:hover,
+						&.on {
+							background-position: -160px -90px;
+						}
+					}
+					&:nth-child(4) {
+						background-position: -240px 0;
+						&:hover,
+						&.on {
+							background-position: -240px -90px;
+						}
+					}
+					&:nth-child(5) {
+						background-position: -320px 0;
+						&:hover,
+						&.on {
+							background-position: -320px -90px;
+						}
+					}
+					&:nth-child(6) {
+						background-position: -400px 0;
+						&:hover,
+						&.on {
+							background-position: -400px -90px;
+						}
+					}
+					> a {
+						display: block;
+						height: 90px;
+						text-indent: -9999px;
+					}
+				} //end of li
+			} //end of ul
+		} //end of navigation
+
+		> .slides {
+			overflow: hidden;
+			position: relative;
+			height: 438px;
+			margin-top: 20px;
+			> ul.slides-container {
+				position: absolute;
+				left: 0;
+				top: 0;
+				display: flex;
+				flex-flow: row nowrap;
+				width: 600%;
+				> li {
+					width: 16.66666%;
+					height: 438px;
+					background-position: center center;
+					background-repeat: no-repeat;
+					&:nth-child(1) {
+						background-image: url(../images/img_talk_cont1.png);
+					}
+					&:nth-child(2) {
+						background-image: url(../images/img_talk_cont2.png);
+					}
+					&:nth-child(3) {
+						background-image: url(../images/img_talk_cont3.png);
+					}
+					&:nth-child(4) {
+						background-image: url(../images/img_talk_cont4.png);
+					}
+					&:nth-child(5) {
+						background-image: url(../images/img_talk_cont5.png);
+					}
+					&:nth-child(6) {
+						background-image: url(../images/img_talk_cont6.png);
+					}
+				} //end of li
+			} //end of .slides-container
+			> a {
+				display: block;
+				width: 44px;
+				height: 44px;
+				text-indent: -9999px;
+				background-image: url(../images/img_talk_button.png);
+
+				&.slide-prev {
+					position: absolute;
+					left: 0;
+					top: 50%;
+					transform: translate(0, -50%);
+					background-position: 0 0;
+					&:hover {
+						background-position: -70px 0;
+					}
+				}
+				&.slide-next {
+					position: absolute;
+					right: 0;
+					top: 50%;
+					transform: translate(0, -50%);
+					background-position: 0 -70px;
+					&:hover {
+						background-position: -70px -70px;
+					}
+				}
+			}
+		} //end of slides
+	} //end of sention
+}
