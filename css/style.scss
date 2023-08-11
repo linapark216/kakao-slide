@@ -37,8 +37,15 @@ img_talk_button.png
 		}
 	}
 	> section {
-		> .navigation {
-			> ul {
+		position: relative;
+		> .slides {
+			overflow: hidden;
+			position: relative;
+			left: 50%;
+			width: 80%;
+			height: 550px;
+			transform: translate(-50%, 0);
+			> ul.slides-navigation {
 				display: flex;
 				justify-content: center;
 				> li {
@@ -91,18 +98,12 @@ img_talk_button.png
 						text-indent: -9999px;
 					}
 				} //end of li
-			} //end of ul
-		} //end of navigation
+			} //end of ul.slides-navigation
 
-		> .slides {
-			overflow: hidden;
-			position: relative;
-			height: 438px;
-			margin-top: 20px;
 			> ul.slides-container {
 				position: absolute;
 				left: 0;
-				top: 0;
+				top: 110px;
 				display: flex;
 				flex-flow: row nowrap;
 				width: 600%;
@@ -131,34 +132,34 @@ img_talk_button.png
 					}
 				} //end of li
 			} //end of .slides-container
-			> a {
-				display: block;
-				width: 44px;
-				height: 44px;
-				text-indent: -9999px;
-				background-image: url(../images/img_talk_button.png);
+		} //end of slides
+		> a {
+			display: block;
+			width: 44px;
+			height: 44px;
+			text-indent: -9999px;
+			background-image: url(../images/img_talk_button.png);
 
-				&.slide-prev {
-					position: absolute;
-					left: 0;
-					top: 50%;
-					transform: translate(0, -50%);
-					background-position: 0 0;
-					&:hover {
-						background-position: -70px 0;
-					}
-				}
-				&.slide-next {
-					position: absolute;
-					right: 0;
-					top: 50%;
-					transform: translate(0, -50%);
-					background-position: 0 -70px;
-					&:hover {
-						background-position: -70px -70px;
-					}
+			&.slide-prev {
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translate(0, -50%);
+				background-position: 0 0;
+				&:hover {
+					background-position: -70px 0;
 				}
 			}
-		} //end of slides
-	} //end of sention
+			&.slide-next {
+				position: absolute;
+				right: 0;
+				top: 50%;
+				transform: translate(0, -50%);
+				background-position: 0 -70px;
+				&:hover {
+					background-position: -70px -70px;
+				}
+			}
+		}
+	} //end of section
 }

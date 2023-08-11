@@ -1,5 +1,5 @@
 $(function () {
-	const $navi = $('.navigation>ul>li>a');
+	const $navi = $('.slides-navigation>li>a');
 	const $slides = $('.slides-container');
 
 	let nowIdx = 0;
@@ -19,7 +19,7 @@ $(function () {
 		// console.log(nowIdx);
 		move();
 	});
-	$('.slides>a.slide-prev').on('click', function (evt) {
+	$('.slide-prev').on('click', function (evt) {
 		evt.preventDefault();
 
 		/* 0 ->5, 1 2 3 4 5 -> -1  */
@@ -33,7 +33,7 @@ $(function () {
 		move();
 	});
 
-	$('.slides>a.slide-next').on('click', function (evt) {
+	$('.slide-next').on('click', function (evt) {
 		evt.preventDefault();
 
 		/* 0 1 2 3 4 -> +1, 5->0  */
